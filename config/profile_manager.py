@@ -50,3 +50,13 @@ def set_default_profile(name: str):
         save_all(cfg)
     else:
         raise KeyError(f"No profile named '{name}'")
+
+
+def update_default_profile(settings: dict):
+    """
+    Overwrite the 'default' profile settings directly
+    (used by the in-app Calibration dialog).
+    """
+    cfg = load_all()
+    cfg["default"] = settings
+    save_all(cfg)

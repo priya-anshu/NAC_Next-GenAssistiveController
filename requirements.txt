@@ -1,0 +1,8 @@
+PyQt6
+SpeechRecognition
+PyAudio
+pyttsx3
+opencv-python
+mediapipe
+pyautogui
+numpy
